@@ -36,6 +36,9 @@ def video_feed():
 @app.route('/about')
 def about():
    return render_template('aboutus.html')
+@app.route('/map')
+def map():
+   return render_template('maps.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
